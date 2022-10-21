@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 .carousel {
+    top: 20px;
     position: relative;
     width: 50%;
     height: 50px;
     margin: 0 auto;
-
 }
 .carousel-content {
     position: relative;
@@ -20,6 +20,7 @@
     z-index: 1;
     transition: left .4s cubic-bezier(.47,.13,.15,.89);
     text-align: center;
+    margin-top: 15px;
 }
 .nav {
     position: absolute;
