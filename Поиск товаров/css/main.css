@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.header-logo {
+    width: 25%;
+}
+.header img {
+    width: 85px;
+    height: 85px;
+}
+.header label {
+    height: 50px;
+}
+.header input {
+    margin-top: 16px;
+    height: 50px;
+    width: 700px;
+    border: 1px solid lightgray;
+}
+@media screen and (max-width: 960px) {
+    .header-logo {
+        width: 15%;
+    }
+    .header input {
+        width: 500px;
+    }
+}
