@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Project</title>
+	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -11,6 +12,7 @@
 	<script rel="script" type="text/javascript" src="js/category.js"></script>
 </head>
 <body>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-2 logo">
@@ -20,9 +22,19 @@
 				</a>
 			</div>
 			<div class="col-10 input-style">
-				<label for="search">
-					<input type="text" id="search" placeholder="Введите текст">
-				</label>
+				<div class="search_string">
+					<input type="text" id="search" placeholder="Введите текст" onfocus="searchListShow()" onblur="searchListHide()">
+					<div class="search_list" id="search_list">
+					    <ul>
+					        <li>lorem</li>
+					        <li>ispum</li>
+					        <li>dor</li>
+					        <li>arup</li>
+					        <li>ofer</li>
+					        <li>kacut</li>
+					    </ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -31,32 +43,38 @@
 		<div class="row">
 			<div class="navbar col-12">
 				<ul class="category">
-					<li class="block" id="one">First button</li>
-					<li class="block" id="two">Second button</li>
-					<li class="block" id="three">Third button</li>
-					<li class="block" id="four">four button</li>
-					<li class="block" id="five">five button</li>
-					<li class="block" id="six">six button</li>
-					<li class="block" id="seven">seven button</li>
-					<li class="block" id="eight">eight button</li>
-					<li class="block" id="nine">nine button</li>
-					<li class="block" id="ten">ten button</li>
+					<li class="block" id="one" onmouseover="hideMain()">Бытовая техника</li>
+					<li class="block" id="two" onmouseover="hideMain()">Спортивные товары</li>
+					<li class="block" id="three" onmouseover="hideMain()">Third button</li>
+					<li class="block" id="four" onmouseover="hideMain()">four button</li>
+					<li class="block" id="five" onmouseover="hideMain()">five button</li>
+					<li class="block" id="six" onmouseover="hideMain()">six button</li>
+					<li class="block" id="seven" onmouseover="hideMain()">seven button</li>
+					<li class="block" id="eight" onmouseover="hideMain()">eight button</li>
+					<li class="block" id="nine" onmouseover="hideMain()">nine button</li>
+					<li class="block" id="ten" onmouseover="hideMain()">ten button</li>
 				</ul>
 			</div>
-			<div class="hidden" id="divone">First div</div>
-			<div class="hidden" id="divtwo">Second div</div>
-			<div class="hidden" id="divthree">Third div</div>
-			<div class="hidden" id="divfour">fourth div</div>
-			<div class="hidden" id="divfive">five div</div>
-			<div class="hidden" id="divsix">six div</div>
-			<div class="hidden" id="divseven">seven div</div>
-			<div class="hidden" id="diveight">eight div</div>
+			<div class="hidden" id="divone"><iframe src="main.html" frameborder="0"></iframe></div>
+			<div class="hidden" id="divtwo"><iframe src="main.html" frameborder="0"></iframe></div>
+			<div class="hidden" id="divthree"><iframe src="main.html" frameborder="0"></iframe></div>
+			<div class="hidden" id="divfour"><iframe src="main.html" frameborder="0"></iframe></div>
+			<div class="hidden" id="divfive"><iframe src="main.html" frameborder="0"></iframe></div>
+			<div class="hidden" id="divsix"><iframe src="main.html" frameborder="0"></iframe></div>
+			<div class="hidden" id="divseven"><iframe src="main.html" frameborder="0"></iframe></div>
+			<div class="hidden" id="diveight"><iframe src="main.html" frameborder="0"></iframe></div>
 			<div class="hidden" id="divnine">nine div</div>
 			<div class="hidden" id="divten">ten div</div>
 		</div>
 	</div>
-
-
+	
+	
+	<iframe id="main_page_frame" src="main.html" frameborder="0"></iframe>
+	
+	<script src="js/prodNameData.json"></script>
+    <!--<script src="js/prodCategoryData.json"></script>-->
+    <script src="js/data.json"></script>
+    <script src="js/script.js"></script>
 	<script rel="script" type="text/javascript" src="js/bootstrap.js"></script>
 	<script rel="script" type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
