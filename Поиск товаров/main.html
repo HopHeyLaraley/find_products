@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="prodBlockGenerate()">
+    <div class="main_page" id="main_id">
+        <div class="products_block">
+                <div class="block_grid" id="script_prod_block">
+                   
+                </div>
+            </div>
+    </div>
+    
+    
+    
+    <div id="prod_info_id" class="prod_info">
+       <div class="tranparent_bg"></div>
+       <div class="transparent_contain">
+           <div class="transparent_contain_header" id="prod_name">
+               название товара
+           </div>
+           <div class="transparent_contain_image">
+               <img src="img/prod_plug.png" alt="">
+           </div>
+           <div class="transparent_contain_prod_page">
+               <button>На страницу товара</button>
+           </div>
+           <div class="transparent_contain_text">
+               <div class="column">Поставщик</div>
+               <div class="column">Условия поставки</div>
+               <div class="column">Стоимость с НДС</div>
+               <div class="column"></div>
+           </div>
+           <div class="transparent_contain_footer">
+               <div class="column">Название поставщика</div>
+               <div class="column">Список условий</div>
+               <div class="column">Цена товара</div>
+               <div class="column"></div>
+           </div>
+        <button class="exit" onclick="closeProdInfo()">X</button>
+       </div>
+    </div>
+    
+    <button onclick="nextPage()">next</button>
+    
+    <script src="js/prodNameData.json"></script>
+    <!--<script src="js/prodCategoryData.json"></script>-->
+    <script src="js/data.json"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
