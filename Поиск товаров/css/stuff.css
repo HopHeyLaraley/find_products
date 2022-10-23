@@ -1,0 +1,25 @@
+.characters {
+    margin-top: 20px;
+}
+.logo-stuff {
+    text-align: center;
+}
+.logo-stuff img {
+    height: 20em;
+    width: 20em;
+}
+.character span {
+    font-size: 22px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.character ul{
+    margin-top: 20px;
+    list-style-type: none;
+    border: 1px solid lightgray;
+}
+.character p{
+    margin: 5px 0;
+    font-weight: 700;
+
+}
